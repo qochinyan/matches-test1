@@ -1,0 +1,8 @@
+$font: "Inter", sans-serif;
+
+@mixin flex($dir: row, $justify: center, $align: center) {
+  display: flex;
+  align-items: $align;
+  flex-direction: $dir;
+  justify-content: $justify;
+}

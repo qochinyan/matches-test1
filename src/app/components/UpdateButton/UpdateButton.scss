@@ -1,0 +1,47 @@
+@import "../../styles/styles.scss";
+
+.update-button {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 204px;
+  height: 56px;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 4px;
+  background-color: #eb0237;
+  cursor: pointer;
+  .image {
+    width: 24px;
+    height: 24px;
+
+    &.anim {
+      animation-name: rotate;
+      animation-duration: 2s;
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+  &:active {
+    background-color: #a01131;
+  }
+
+  &:disabled {
+    background-color: #701328;
+  }
+}
+
+@keyframes rotate {
+  0% {
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

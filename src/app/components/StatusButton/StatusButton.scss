@@ -1,0 +1,23 @@
+@import "../../styles/styles.scss";
+
+.status-button {
+  font-family: $font;
+  border: none;
+  min-width: 92px;
+  height: 27px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0 8px;
+  &.Ongoing {
+    background-color: #43ad28;
+  }
+
+  &.Finished {
+    background-color: #eb0237;
+  }
+  &.Scheduled {
+    background-color: #eb6402;
+  }
+}
